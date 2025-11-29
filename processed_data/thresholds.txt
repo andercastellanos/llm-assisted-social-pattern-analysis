@@ -1,0 +1,4 @@
+# Engagement Label Thresholds (Data-Driven)
+HIGH_THRESHOLD=0.41
+MEDIUM_THRESHOLD=0.08
+FAISS_FILTER_THRESHOLD=0.163
