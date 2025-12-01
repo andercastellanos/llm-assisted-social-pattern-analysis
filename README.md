@@ -37,41 +37,27 @@ The system implements a 4-stage pipeline:
 
 ## Project Structure
 ```
-ML_Project/
-│
-├── data/
-│   ├── raw/                          # Original dataset (optional, or .gitignore)
-│   └── processed/                    # Your processed CSVs
-│       ├── social_media_processed.csv
-│       ├── train_data.csv
-│       ├── val_data.csv
-│       ├── test_data.csv
-│       └── thresholds.txt
-│
-├── models/                           # PUT THE THREE FILES HERE ⭐
+FinalProject/
+├── README.md
+├── artifacts/
+│   ├── stage2_results/
+│   │   └── sample_stage2_results.pkl
+│   └── stage3_results/               # currently empty
+├── models/
 │   ├── post_embeddings.npy
 │   ├── posts_faiss.index
 │   └── posts_metadata.pkl
-│
 ├── notebooks/
-│   ├── 01_data_preprocessing.ipynb   # Your current notebook
-│   ├── 02_build_vector_db.ipynb      # Stage 1 notebook
-│   └── 03_semantic_retrieval.ipynb   # Stage 2 (coming next)
-│
-├── src/                              # Python scripts (later)
-│   ├── retrieval_pipeline.py
-│   ├── hybrid_ranker.py
-│   └── llm_explainer.py
-│
-├── reports/                          # Documentation
-│   ├── decision_reports/
-│   │   └── threshold_selection.md
-│   └── figures/
-│       ├── engagement_distribution.png
-│       └── stratification_check.png
-│
-├── requirements.txt
-├── README.md
+│   ├── 00_social_media_preprocessing_updated.ipynb
+│   ├── 01_build_vector_database.ipynb
+│   └── 02_semantic_retrieval_updated.ipynb
+├── processed_data/
+│   ├── social_media_processed.csv
+│   ├── test_data.csv
+│   ├── thresholds.txt
+│   ├── train_data.csv
+│   └── val_data.csv
+├── src/                              # reserved for scripts (empty)
 └── .gitignore
 ```
 
